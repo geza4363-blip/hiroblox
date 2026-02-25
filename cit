@@ -1,0 +1,23 @@
+loadstring([[
+-- =========================================================
+-- WIN TRADING - AUTO REJOIN DENGAN PROXIMITY PROMPT
+-- =========================================================
+
+-- Load Rayfield
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+-- Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local UserInputService = game:GetService("UserInputService")
+local ProximityPromptService = game:GetService("ProximityPromptService")
+local Workspace = game:GetService("Workspace")
+
+-- =========================================================
+-- REMOTE
+-- =========================================================
+local SubmitWord = ReplicatedStorage.Remotes.SubmitWord
+local BillboardUpdate = ReplicatedStorage.Remotes.BillboardUpdate
+local TypeSound = ReplicatedStorage.Remotes.TypeSound
+local UsedWordWarn = ReplicatedStorage.Remotes
